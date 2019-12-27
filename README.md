@@ -4,7 +4,7 @@ This repository includes a Docker file that can be used to build a Docker contai
 
 ## Building the Docker image
 In order to build the image, clone or download this repository, open a terminal and go to the repository directory.
-Then, run the following command `docker build -t myimage:psopt .`  in a terminalwindow, where `myimage:psopt` can be changed to rename the Docker image being built. Building the Docker image will run the compiler `gcc` as the optimal control tool [PSOPT](https://github.com/PSOPT/psopt) relies on multiple third party libraries, therefore, the following minimum configuration for Docker is required:
+Then, run the following command `docker build -t myimage:psopt .`  in a terminal window, where `myimage:psopt` can be changed to rename the Docker image being built. Building the Docker image will run the compiler `gcc` as the optimal control tool [PSOPT](https://github.com/PSOPT/psopt) relies on multiple third party libraries, therefore, the following minimum configuration for Docker is required:
 
 * 4Gib of Memory
 * 2Gib of Swap Memory
