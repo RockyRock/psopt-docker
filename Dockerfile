@@ -9,7 +9,6 @@ RUN apt -y install apt-utils autoconf libtool build-essential software-propertie
 RUN git clone https://github.com/PSOPT/psopt /root/psopt/
 RUN mkdir /root/Downloads
 RUN ln -s /root /home/root
-RUN ls -la
 RUN cd /root/psopt && sed 's/sudo //g' install-ubuntu-18.04.sh > nosudo-install-ubuntu-18.04.sh && sh ./nosudo-install-ubuntu-18.04.sh
 
 #### End of Docker file ####
